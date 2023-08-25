@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImPointRight, ImFilm, ImBook, ImMusic, ImAirplane} from "react-icons/im";
+import {} from 'react-icons'
 
 function AboutCard() {
   return (
@@ -8,13 +9,9 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br /> I am a final year student pursuing an Integrated MSc (IMSc)
-            in Maths and Computing at BIT Mesra.
-            <br />
-            Additionally, I am currently employed as a software developer at
-            Juspay.
+            Hi Everyone, I am <span className="purple">Gabriel Ribeiro </span>
+            from <span className="purple"> Brasília, Brazil.</span>
+            <br />I'm a full-stack Developer at Natura&Co.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -24,17 +21,23 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImBook /> Studying Languages
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImFilm /> Watching Kung-fu Movies
+            </li>
+            <li className="about-activity">
+              <ImAirplane /> Travelling
+            </li>
+            <li className="about-activity">
+              <ImMusic /> Playing Guitar
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          “As you think, so shall you become”{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Lei Siu-Lung</footer>
         </blockquote>
       </Card.Body>
     </Card>
