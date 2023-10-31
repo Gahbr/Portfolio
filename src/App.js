@@ -16,11 +16,14 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ReactGA from 'react-ga';
 
 function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
+    ReactGA.initialize('G-YHGJG2HCMY');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
